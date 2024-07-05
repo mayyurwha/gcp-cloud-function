@@ -31,5 +31,5 @@ jobs:
         name: 'customer_order_processor'
         runtime: 'python310'
         event_trigger_type: 'google.storage.object.finalize'
-        event_trigger_resource: 'projects/${{secrets.GCP:PROJECT_ID}}/buckets/alt-orders'
+        event_trigger_resource: 'projects/${{secrets.GCP_PROJECT_ID}}/buckets/alt-orders'
         entry_point: 'file_processor'
